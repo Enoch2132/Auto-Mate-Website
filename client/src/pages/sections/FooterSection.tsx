@@ -1,6 +1,6 @@
 import { FacebookIcon, InstagramIcon, YoutubeIcon } from "lucide-react";
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link } from "wouter";
 import { Separator } from "@/components/ui/separator";
 
 export const FooterSection = (): JSX.Element => {
