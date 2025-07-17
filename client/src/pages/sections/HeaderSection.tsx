@@ -32,13 +32,13 @@ export const HeaderSection = (): JSX.Element => {
         <NavigationMenuList className="flex items-center gap-[5px]">
           {navItems.map((item, index) => (
             <NavigationMenuItem key={index}>
-              <Link to={item.path} className="opacity-50">
-                <NavigationMenuLink className="inline-flex items-center justify-center px-[21px] py-4">
+              <NavigationMenuLink asChild>
+                <Link to={item.path} className="opacity-50 inline-flex items-center justify-center px-[21px] py-4">
                   <span className="[font-family:'Outfit',Helvetica] font-bold text-white text-base">
                     {item.label}
                   </span>
-                </NavigationMenuLink>
-              </Link>
+                </Link>
+              </NavigationMenuLink>
             </NavigationMenuItem>
           ))}
 
