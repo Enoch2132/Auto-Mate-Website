@@ -3,7 +3,7 @@ import { FooterSection } from "./sections/FooterSection";
 import { HeaderSection } from "./sections/HeaderSection";
 import { HeroSection } from "./sections/HeroSection";
 
-export const Homepage = (): JSX.Element => {
+export function Homepage() {
   // Feature card data for mapping
   const featureCards = [
     {
@@ -44,4 +44,4 @@ export const Homepage = (): JSX.Element => {
       </div>
     </div>
   );
-};
+}

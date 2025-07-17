@@ -3,7 +3,7 @@ import React from "react";
 import { Link } from "wouter";
 import { Separator } from "@/components/ui/separator";
 
-export const FooterSection = (): JSX.Element => {
+export function FooterSection() {
   // Navigation links data
   const navLinks = [
     { name: "Home", path: "/homepage", isLink: true },
@@ -64,4 +64,4 @@ export const FooterSection = (): JSX.Element => {
       </nav>
     </footer>
   );
-};
+}

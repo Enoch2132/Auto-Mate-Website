@@ -8,7 +8,7 @@ import {
   NavigationMenuList,
 } from "@/components/ui/navigation-menu";
 
-export const HeaderSection = (): JSX.Element => {
+export function HeaderSection() {
   // Navigation menu items data
   const navItems = [
     { label: "Home", path: "/homepage" },
@@ -53,4 +53,4 @@ export const HeaderSection = (): JSX.Element => {
       </NavigationMenu>
     </header>
   );
-};
+}
