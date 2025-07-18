@@ -41,9 +41,11 @@ export function HeaderSection() {
           ))}
 
           <NavigationMenuItem>
-            <Button className="bg-cyan-500 hover:bg-cyan-600 text-white px-6 py-2 rounded-lg font-medium text-sm">
-              Sign Up
-            </Button>
+            <Link to="/signup">
+              <Button className="bg-cyan-500 hover:bg-cyan-600 text-white px-6 py-2 rounded-lg font-medium text-sm">
+                Sign Up
+              </Button>
+            </Link>
           </NavigationMenuItem>
         </NavigationMenuList>
       </NavigationMenu>

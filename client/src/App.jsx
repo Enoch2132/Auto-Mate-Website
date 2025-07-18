@@ -8,6 +8,7 @@ import { ProductPage } from "@/pages/ProductPage";
 import { DashboardPage } from "@/pages/DashboardPage";
 import { AssetStorePage } from "@/pages/AssetStorePage";
 import { LoginPage } from "@/pages/LoginPage";
+import { SignUpPage } from "@/pages/SignUpPage";
 import NotFound from "@/pages/not-found";
 
 function Router() {
@@ -19,6 +20,7 @@ function Router() {
       <Route path="/dashboard" component={DashboardPage} />
       <Route path="/asset-store" component={AssetStorePage} />
       <Route path="/login" component={LoginPage} />
+      <Route path="/signup" component={SignUpPage} />
       {/* Fallback to 404 */}
       <Route component={NotFound} />
     </Switch>
