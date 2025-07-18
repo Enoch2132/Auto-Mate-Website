@@ -21,9 +21,11 @@ export function HeaderSection() {
   return (
     <header className="flex items-center justify-between px-6 py-3 fixed top-4 left-4 right-4 mx-auto max-w-6xl h-[60px] bg-gray-900/90 backdrop-blur-lg border border-gray-700 rounded-full z-50">
       <Link to="/homepage" className="flex items-center gap-2">
-        <div className="w-8 h-8 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-lg flex items-center justify-center">
-          <span className="text-white font-bold text-sm">A</span>
-        </div>
+        <img 
+          src="/figmaAssets/auto-mate-logo-background-2.png"
+          alt="Auto-Mate Logo"
+          className="w-8 h-8"
+        />
         <span className="text-white font-bold text-lg">Auto-Mate</span>
       </Link>
 
