@@ -23,11 +23,6 @@ export function LoginPage() {
       <div className="pt-16 flex min-h-screen">
         {/* Left Panel - Dark with branding */}
         <div className="w-1/2 bg-black text-white flex flex-col justify-center items-center px-12 relative overflow-hidden">
-          {/* Logo */}
-          <div className="absolute top-8 left-8">
-            <img src="/figmaAssets/auto-mate-logo-background-2.png" alt="Auto-Mate" className="h-12" />
-          </div>
-          
           {/* Main content */}
           <div className="z-10 text-center max-w-md">
             <h1 className="text-4xl font-bold mb-4">
