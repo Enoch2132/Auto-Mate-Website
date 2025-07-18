@@ -33,12 +33,51 @@ export function LoginPage() {
           {/* Decorative geometric element */}
           <div className="absolute inset-0 flex items-center justify-center">
             <div className="relative">
-              {/* Outer ring */}
-              <div className="w-80 h-80 border-2 border-blue-500/30 rounded-full absolute animate-spin-slow"></div>
-              <div className="w-64 h-64 border-2 border-purple-500/30 rounded-full absolute top-8 left-8 animate-spin-slow" style={{ animationDirection: 'reverse' }}></div>
+              {/* Flowing organic shapes */}
+              <div className="absolute -top-10 -left-10">
+                <div className="w-96 h-96 opacity-20">
+                  <svg viewBox="0 0 400 400" className="w-full h-full">
+                    <path
+                      d="M100,200 Q200,50 300,200 Q200,350 100,200"
+                      fill="none"
+                      stroke="url(#gradient1)"
+                      strokeWidth="3"
+                      className="animate-pulse"
+                    />
+                    <path
+                      d="M80,180 Q180,30 280,180 Q180,330 80,180"
+                      fill="none"
+                      stroke="url(#gradient2)"
+                      strokeWidth="2"
+                      className="animate-pulse"
+                      style={{ animationDelay: '1s' }}
+                    />
+                    <defs>
+                      <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stopColor="#06b6d4" />
+                        <stop offset="50%" stopColor="#3b82f6" />
+                        <stop offset="100%" stopColor="#8b5cf6" />
+                      </linearGradient>
+                      <linearGradient id="gradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stopColor="#8b5cf6" />
+                        <stop offset="50%" stopColor="#3b82f6" />
+                        <stop offset="100%" stopColor="#06b6d4" />
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                </div>
+              </div>
               
-              {/* Center square with gradient */}
-              <div className="w-32 h-32 bg-gradient-to-br from-cyan-400 via-blue-500 to-purple-600 rounded-2xl absolute top-24 left-24 shadow-2xl"></div>
+              {/* Center square with gradient - more prominent */}
+              <div className="w-40 h-40 bg-gradient-to-br from-cyan-400 via-blue-500 to-purple-600 rounded-3xl shadow-2xl shadow-blue-500/50 relative z-10"></div>
+              
+              {/* Additional flowing elements */}
+              <div className="absolute -bottom-20 -right-20 w-64 h-64 opacity-10">
+                <div className="w-full h-full border-2 border-purple-400 rounded-full animate-spin" style={{ animationDuration: '20s' }}></div>
+              </div>
+              <div className="absolute -top-20 -right-20 w-48 h-48 opacity-15">
+                <div className="w-full h-full border-2 border-cyan-400 rounded-full animate-spin" style={{ animationDuration: '15s', animationDirection: 'reverse' }}></div>
+              </div>
             </div>
           </div>
         </div>
