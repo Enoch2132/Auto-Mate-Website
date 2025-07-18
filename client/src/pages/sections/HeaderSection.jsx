@@ -19,7 +19,7 @@ export function HeaderSection() {
   ];
 
   return (
-    <header className="flex items-center justify-between px-4 py-0.5 fixed top-5 left-0 right-0 mx-auto max-w-[1400px] h-[70px] bg-gray-800/80 border border-solid border-gray-600 backdrop-blur-[7.5px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(7.5px)_brightness(100%)] z-10">
+    <header className="flex items-center justify-between px-4 py-0.5 fixed top-5 left-0 right-0 mx-auto max-w-[1400px] h-[70px] bg-gray-800/80 border border-solid border-gray-600 backdrop-blur-[7.5px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(7.5px)_brightness(100%)] rounded-2xl z-10">
       <Link to="/homepage" className="flex items-center">
         <img
           className="w-[76px] h-[62px]"
