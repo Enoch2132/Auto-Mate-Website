@@ -22,33 +22,33 @@ export function LoginPage() {
       <HeaderSection />
       <div className="pt-16 flex min-h-screen">
         {/* Left Panel - Dark with branding */}
-        <div className="w-1/2 bg-black text-white flex flex-col justify-center items-center px-12 relative overflow-hidden">
-          {/* Main content */}
-          <div className="z-10 text-center max-w-md">
-            <h1 className="text-4xl font-bold mb-4">
+        <div className="w-1/2 bg-black text-white flex flex-col px-12 relative overflow-hidden">
+          {/* Main content - positioned at top */}
+          <div className="z-10 text-left mt-16 mb-8 max-w-md">
+            <h1 className="text-4xl font-bold leading-tight">
               Auto-Mate connects you to thousands of APIs
             </h1>
           </div>
           
-          {/* Decorative geometric element */}
-          <div className="absolute inset-0 flex items-center justify-center">
+          {/* Decorative geometric element - positioned below text */}
+          <div className="flex-1 flex items-center justify-center relative">
             <div className="relative">
               {/* Flowing organic shapes */}
-              <div className="absolute -top-10 -left-10">
-                <div className="w-96 h-96 opacity-20">
-                  <svg viewBox="0 0 400 400" className="w-full h-full">
+              <div className="absolute -top-20 -left-20">
+                <div className="w-80 h-80 opacity-30">
+                  <svg viewBox="0 0 320 320" className="w-full h-full">
                     <path
-                      d="M100,200 Q200,50 300,200 Q200,350 100,200"
+                      d="M80,160 Q160,40 240,160 Q160,280 80,160"
                       fill="none"
                       stroke="url(#gradient1)"
-                      strokeWidth="3"
+                      strokeWidth="2"
                       className="animate-pulse"
                     />
                     <path
-                      d="M80,180 Q180,30 280,180 Q180,330 80,180"
+                      d="M60,140 Q140,20 220,140 Q140,260 60,140"
                       fill="none"
                       stroke="url(#gradient2)"
-                      strokeWidth="2"
+                      strokeWidth="1.5"
                       className="animate-pulse"
                       style={{ animationDelay: '1s' }}
                     />
@@ -68,14 +68,14 @@ export function LoginPage() {
                 </div>
               </div>
               
-              {/* Center square with gradient - more prominent */}
-              <div className="w-40 h-40 bg-gradient-to-br from-cyan-400 via-blue-500 to-purple-600 rounded-3xl shadow-2xl shadow-blue-500/50 relative z-10"></div>
+              {/* Center square with gradient */}
+              <div className="w-32 h-32 bg-gradient-to-br from-cyan-400 via-blue-500 to-purple-600 rounded-2xl shadow-2xl shadow-blue-500/30 relative z-10"></div>
               
               {/* Additional flowing elements */}
-              <div className="absolute -bottom-20 -right-20 w-64 h-64 opacity-10">
+              <div className="absolute -bottom-16 -right-16 w-56 h-56 opacity-15">
                 <div className="w-full h-full border-2 border-purple-400 rounded-full animate-spin" style={{ animationDuration: '20s' }}></div>
               </div>
-              <div className="absolute -top-20 -right-20 w-48 h-48 opacity-15">
+              <div className="absolute -top-16 -right-16 w-40 h-40 opacity-20">
                 <div className="w-full h-full border-2 border-cyan-400 rounded-full animate-spin" style={{ animationDuration: '15s', animationDirection: 'reverse' }}></div>
               </div>
             </div>
