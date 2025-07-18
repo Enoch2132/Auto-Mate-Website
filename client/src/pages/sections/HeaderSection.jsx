@@ -19,13 +19,12 @@ export function HeaderSection() {
   ];
 
   return (
-    <header className="flex items-center justify-between px-4 py-0.5 fixed top-5 left-0 right-0 mx-auto max-w-[1400px] h-[70px] bg-gray-800/80 border border-solid border-gray-600 backdrop-blur-[7.5px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(7.5px)_brightness(100%)] rounded-2xl z-10">
-      <Link to="/homepage" className="flex items-center">
-        <img
-          className="w-[76px] h-[62px]"
-          alt="Auto mate logo"
-          src="/figmaAssets/auto-mate-logo-background-2.png"
-        />
+    <header className="flex items-center justify-between px-6 py-3 fixed top-4 left-4 right-4 mx-auto max-w-6xl h-[60px] bg-gray-900/90 backdrop-blur-lg border border-gray-700 rounded-full z-50">
+      <Link to="/homepage" className="flex items-center gap-2">
+        <div className="w-8 h-8 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-lg flex items-center justify-center">
+          <span className="text-white font-bold text-sm">A</span>
+        </div>
+        <span className="text-white font-bold text-lg">Auto-Mate</span>
       </Link>
 
       <NavigationMenu className="max-w-none">
@@ -33,20 +32,16 @@ export function HeaderSection() {
           {navItems.map((item, index) => (
             <NavigationMenuItem key={index}>
               <NavigationMenuLink asChild>
-                <Link to={item.path} className="opacity-50 inline-flex items-center justify-center px-[21px] py-4">
-                  <span className="[font-family:'Outfit',Helvetica] font-bold text-white text-base">
-                    {item.label}
-                  </span>
+                <Link to={item.path} className="text-gray-300 hover:text-white transition-colors inline-flex items-center justify-center px-4 py-2 text-sm font-medium">
+                  {item.label}
                 </Link>
               </NavigationMenuLink>
             </NavigationMenuItem>
           ))}
 
           <NavigationMenuItem>
-            <Button className="h-11 px-[21px] py-4 rounded-lg bg-[linear-gradient(127deg,rgba(138,56,245,1)_0%,rgba(0,246,201,1)_100%)] hover:bg-[linear-gradient(127deg,rgba(138,56,245,0.9)_0%,rgba(0,246,201,0.9)_100%)]">
-              <span className="[font-family:'Outfit',Helvetica] font-bold text-white text-base">
-                Sign Up
-              </span>
+            <Button className="bg-cyan-500 hover:bg-cyan-600 text-white px-6 py-2 rounded-lg font-medium text-sm">
+              Sign Up
             </Button>
           </NavigationMenuItem>
         </NavigationMenuList>

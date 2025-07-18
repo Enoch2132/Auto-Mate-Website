@@ -3,24 +3,62 @@ import { Button } from "@/components/ui/button";
 
 export function HeroSection() {
   return (
-    <div className="flex flex-col items-center justify-center pt-32 pb-20 px-4 bg-gradient-to-b from-transparent to-zinc-900/50">
-      <div className="text-center max-w-4xl">
-        <h1 className="text-5xl md:text-7xl font-bold text-white mb-6">
-          Build APIs with{" "}
-          <span className="bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent">
-            Natural Language
-          </span>
-        </h1>
-        <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-          Transform your ideas into powerful APIs using plain English. No coding required.
-        </p>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Button className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white px-8 py-6 text-lg">
-            Get Started Free
-          </Button>
-          <Button variant="outline" className="border-white/20 text-white hover:bg-white/10 px-8 py-6 text-lg">
-            Watch Demo
-          </Button>
+    <div className="pt-32 pb-20 px-6">
+      <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
+        {/* Left Side - Main Content */}
+        <div className="space-y-8">
+          <div>
+            <h1 className="text-5xl lg:text-6xl font-bold leading-tight">
+              <span className="text-cyan-400">AI-Driven</span> Seamless<br />
+              API Integration, No<br />
+              Code Needed
+            </h1>
+            <p className="text-gray-300 text-lg mt-6 leading-relaxed">
+              Effortlessly connect with thousands of APIs using natural language. Just type your request, link to your preferred APIs and watch the magic happen.
+            </p>
+          </div>
+          
+          <div className="flex gap-4">
+            <Button className="bg-cyan-500 hover:bg-cyan-600 text-white px-8 py-3 rounded-lg font-semibold">
+              Get Started Free
+            </Button>
+            <Button variant="outline" className="border-gray-600 text-white hover:bg-gray-800 px-8 py-3 rounded-lg">
+              Learn More
+            </Button>
+          </div>
+        </div>
+
+        {/* Right Side - Chat Examples */}
+        <div className="space-y-4">
+          <div className="bg-gray-900 rounded-xl p-4 border border-gray-700">
+            <div className="flex items-start gap-3">
+              <div className="w-3 h-3 bg-green-500 rounded-full mt-2"></div>
+              <div>
+                <p className="text-white">I need to send an email to all customers who purchased our product last month.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div className="bg-gray-900 rounded-xl p-4 border border-gray-700">
+            <div className="flex items-start gap-3">
+              <div className="w-3 h-3 bg-green-500 rounded-full mt-2"></div>
+              <div>
+                <p className="text-white">I can help with that. Which email service would you like to use?</p>
+                <p className="text-gray-400 text-sm mt-1">
+                  Try typing <span className="text-cyan-400">@gmail</span> or <span className="text-cyan-400">@mailchimp</span> to select an API.
+                </p>
+              </div>
+            </div>
+          </div>
+          
+          <div className="bg-gray-900 rounded-xl p-4 border border-gray-700">
+            <div className="flex items-start gap-3">
+              <div className="w-3 h-3 bg-green-500 rounded-full mt-2"></div>
+              <div>
+                <p className="text-white">I want to use <span className="text-cyan-400">@gmail</span> to create a campaign for these customers.</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
