@@ -20,13 +20,12 @@ export function HeaderSection() {
 
   return (
     <header className="flex items-center justify-between px-6 py-3 fixed top-4 left-4 right-4 mx-auto max-w-6xl h-[60px] bg-gray-900/90 backdrop-blur-lg border border-gray-700 rounded-full z-50">
-      <Link to="/homepage" className="flex items-center gap-2">
+      <Link to="/homepage" className="flex items-center">
         <img 
           src="/figmaAssets/auto-mate-logo-background-2.png"
           alt="Auto-Mate Logo"
-          className="w-8 h-8"
+          className="w-12 h-12"
         />
-        <span className="text-white font-bold text-lg">Auto-Mate</span>
       </Link>
 
       <NavigationMenu className="max-w-none">
